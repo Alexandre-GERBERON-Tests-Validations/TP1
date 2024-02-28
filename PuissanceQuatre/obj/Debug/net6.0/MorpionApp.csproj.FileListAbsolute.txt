@@ -1,0 +1,14 @@
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\bin\Debug\net6.0\MorpionApp.exe
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\bin\Debug\net6.0\MorpionApp.deps.json
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\bin\Debug\net6.0\MorpionApp.runtimeconfig.json
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\bin\Debug\net6.0\MorpionApp.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\bin\Debug\net6.0\MorpionApp.pdb
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.AssemblyInfoInputs.cache
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.AssemblyInfo.cs
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.csproj.CoreCompileInputs.cache
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\refint\MorpionApp.dll
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.pdb
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\MorpionApp.genruntimeconfig.cache
+C:\Users\Alexandre\Desktop\Cours\Ingenieur\A2\Tests et validations\Séance 1 & 2\PuissanceQuatre\obj\Debug\net6.0\ref\MorpionApp.dll
