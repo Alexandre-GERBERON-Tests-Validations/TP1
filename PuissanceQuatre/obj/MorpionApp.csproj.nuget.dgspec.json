@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\PuissanceQuatre\\MorpionApp.csproj": {}
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\TP\\PuissanceQuatre\\MorpionApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\PuissanceQuatre\\MorpionApp.csproj": {
+    "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\TP\\PuissanceQuatre\\MorpionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\PuissanceQuatre\\MorpionApp.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\TP\\PuissanceQuatre\\MorpionApp.csproj",
         "projectName": "MorpionApp",
-        "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\PuissanceQuatre\\MorpionApp.csproj",
+        "projectPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\TP\\PuissanceQuatre\\MorpionApp.csproj",
         "packagesPath": "C:\\Users\\Alexandre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\PuissanceQuatre\\obj\\",
+        "outputPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\Séance 1 & 2\\TP\\PuissanceQuatre\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

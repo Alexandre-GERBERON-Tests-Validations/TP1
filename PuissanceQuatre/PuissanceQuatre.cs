@@ -117,27 +117,6 @@ namespace MorpionApp
                         }
                         break;
 
-                    //case ConsoleKey.UpArrow:
-                    //    if (row <= 0)
-                    //    {
-                    //        row = 3;
-                    //    }
-                    //    else
-                    //    {
-                    //        row = row - 1;
-                    //    }
-                    //    break;
-
-                    //case ConsoleKey.DownArrow:
-                    //    if (row >= 3)
-                    //    {
-                    //        row = 0;
-                    //    }
-                    //    else
-                    //    {
-                    //        row = row + 1;
-                    //    }
-                    //    break;
                     case ConsoleKey.Enter:
                         while (row <= 3)
                         {
@@ -210,27 +189,6 @@ namespace MorpionApp
                         }
                         break;
 
-                    //case ConsoleKey.UpArrow:
-                    //    if (row <= 0)
-                    //    {
-                    //        row = 3;
-                    //    }
-                    //    else
-                    //    {
-                    //        row = row - 1;
-                    //    }
-                    //    break;
-
-                    //case ConsoleKey.DownArrow:
-                    //    if (row >= 3)
-                    //    {
-                    //        row = 0;
-                    //    }
-                    //    else
-                    //    {
-                    //        row = row + 1;
-                    //    }
-                    //    break;
                     case ConsoleKey.Enter:
                         while (row <= 3)
                         {

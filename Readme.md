@@ -38,7 +38,6 @@ public void tourJoueur2()
 {
     // Logique similaire au joueur 1, mais adaptée pour le joueur 2
 }
-
 ```
 
 ```csharp
@@ -59,25 +58,13 @@ public void tourJoueur2()
 
 Les appels à la console sont effectués directement dans les classes de jeu. Cela rend le code dépendant de l'interface console, limitant la possibilité d'ajouter d'autres interfaces utilisateur (GUI)
 
-
-
-
-
-
-
-
-
 ### 1.4 - Gestion des erreurs
 
 Les méthodes de déplacement des joueurs (`tourJoueur` et `tourJoueur2`) n'incluent pas de gestion des erreurs, ce qui peut conduire à des comportements inattendus.
 
-
-
 ### 1.5 - Violation des principes SOLID
 
 Les classes Morpion et PuissanceQuatre assument plusieurs responsabilités telles que la gestion du jeu, l'interaction avec la console et la vérification de la victoire. Cela viole le principe de responsabilité unique de SOLID, rendant le code moins modulaire et difficile à étendre.
-
-
 
 ### 1.6 - Présence de code mort
 
@@ -111,8 +98,6 @@ Présence de code mort dans `tourJoueur.cs` du puissance quatre
 ...
 ```
 
-
-
 ### 1.7 - Présence de nombre magique
 
 Lors de la création de la grille du morpion et du puissance quatre : 
@@ -132,6 +117,8 @@ Lors du déplacement du curseur :
                 Console.WriteLine("Choisir une case valide est appuyer sur [Entrer]");
                 Console.SetCursorPosition(column * 6 + 1, row * 4 + 1);
 ```
+
+Il est possible de faire des tests uniquement sur des fonctions qui retournent quelque chose (normalement il y a deux fonctions bool) et pas sur les void
 
 ## 2 - Les méthodes de résolution de ces problèmes
 
