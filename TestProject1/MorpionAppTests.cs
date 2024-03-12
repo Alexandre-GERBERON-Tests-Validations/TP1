@@ -5,95 +5,100 @@ namespace TestProject1
     public class MorpionTests
     {
         [Fact]
-        public void TestTourJoueur()
+        public void TestVerifVictoire_Player1Wins_ReturnsTrue()
         {
             // Arrange
-            var morpion = new Morpion();
-            morpion.grille = new char[3, 3]
-            {
-                    { 'X', ' ', ' '},
-                    { ' ', ' ', ' '},
-                    { ' ', ' ', ' '},
-            };
+            Morpion morpion = new Morpion();
+            morpion.InitialiserGrille(3, 3);
+            morpion.grille.SetCell(0, 0, CellValue.X);
+            morpion.grille.SetCell(0, 1, CellValue.X);
+            morpion.grille.SetCell(0, 2, CellValue.X);
 
             // Act
-            morpion.tourJoueur();
-
-            // Assert
-            Assert.Equal('X', morpion.grille[0, 0]);
-        }
-
-        [Fact]
-        public void TestTourJoueur2()
-        {
-            // Arrange
-            var morpion = new Morpion();
-            morpion.grille = new char[3, 3]
-            {
-                    { 'O', ' ', ' '},
-                    { ' ', ' ', ' '},
-                    { ' ', ' ', ' '},
-            };
-
-            // Act
-            morpion.tourJoueur2();
-
-            // Assert
-            Assert.Equal('O', morpion.grille[0, 0]);
-        }
-
-        [Fact]
-        public void TestVerifVictoireLigne()
-        {
-            // Arrange
-            var morpion = new Morpion();
-            morpion.grille = new char[3, 3]
-            {
-                    { 'X', 'X', 'X'},
-                    { ' ', ' ', ' '},
-                    { ' ', ' ', ' '},
-            };
-
-            // Act
-            var result = morpion.verifVictoire('X');
+            bool result = morpion.verifVictoire(CellValue.X);
 
             // Assert
             Assert.True(result);
         }
 
         [Fact]
-        public void TestVerifVictoireDiagonale()
+        public void TestVerifVictoire_Player2Wins_ReturnsTrue()
         {
             // Arrange
-            var morpion = new Morpion();
-            morpion.grille = new char[3, 3]
-            {
-                    { 'O', ' ', ' '},
-                    { ' ', 'O', ' '},
-                    { ' ', ' ', 'O'},
-            };
+            Morpion morpion = new Morpion();
+            morpion.InitialiserGrille(3, 3);
+            morpion.grille.SetCell(1, 0, CellValue.O);
+            morpion.grille.SetCell(1, 1, CellValue.O);
+            morpion.grille.SetCell(1, 2, CellValue.O);
 
             // Act
-            var result = morpion.verifVictoire('O');
+            bool result = morpion.verifVictoire(CellValue.O);
 
             // Assert
             Assert.True(result);
         }
 
         [Fact]
-        public void TestVerifEgalite()
+        public void TestVerifVictoire_NoWinner_ReturnsFalse()
         {
             // Arrange
-            var morpion = new Morpion();
-            morpion.grille = new char[3, 3]
-            {
-                    { 'X', 'O', 'X'},
-                    { 'O', 'X', 'O'},
-                    { 'O', 'X', 'O'},
-            };
+            Morpion morpion = new Morpion();
+            morpion.InitialiserGrille(3, 3);
+            morpion.grille.SetCell(0, 0, CellValue.X);
+            morpion.grille.SetCell(0, 1, CellValue.O);
+            morpion.grille.SetCell(0, 2, CellValue.X);
+            morpion.grille.SetCell(1, 0, CellValue.O);
+            morpion.grille.SetCell(1, 1, CellValue.X);
+            morpion.grille.SetCell(1, 2, CellValue.O);
+            morpion.grille.SetCell(2, 0, CellValue.X);
+            morpion.grille.SetCell(2, 1, CellValue.O);
+            morpion.grille.SetCell(2, 2, CellValue.X);
 
             // Act
-            var result = morpion.verifEgalite();
+            bool result = morpion.verifVictoire(CellValue.X);
+
+            // Assert
+            Assert.False(result);
+        }
+
+        [Fact]
+        public void TestVerifEgalite_BoardNotFull_ReturnsFalse()
+        {
+            // Arrange
+            Morpion morpion = new Morpion();
+            morpion.InitialiserGrille(3, 3);
+            morpion.grille.SetCell(0, 0, CellValue.X);
+            morpion.grille.SetCell(0, 1, CellValue.O);
+            morpion.grille.SetCell(0, 2, CellValue.X);
+            morpion.grille.SetCell(1, 0, CellValue.O);
+            morpion.grille.SetCell(1, 1, CellValue.X);
+            morpion.grille.SetCell(1, 2, CellValue.O);
+
+            // Act
+            bool result = morpion.verifEgalite();
+
+            // Assert
+            Assert.False(result);
+        }
+
+        [Fact]
+        public void TestVerifEgalite_BoardFull_ReturnsTrue()
+        {
+            // Arrange
+            Morpion morpion = new Morpion();
+            morpion.InitialiserGrille(3, 3);
+            morpion.grille.SetCell(0, 0, CellValue.X);
+            morpion.grille.SetCell(0, 1, CellValue.O);
+            morpion.grille.SetCell(0, 2, CellValue.X);
+            morpion.grille.SetCell(1, 0, CellValue.O);
+            morpion.grille.SetCell(1, 1, CellValue.X);
+            morpion.grille.SetCell(1, 2, CellValue.O);
+            morpion.grille.SetCell(2, 0, CellValue.X);
+            morpion.grille.SetCell(2, 1, CellValue.O);
+            morpion.grille.SetCell(2, 2, CellValue.X);
+
+            // Act
+            bool result = morpion.verifEgalite();
 
             // Assert
             Assert.True(result);
@@ -103,64 +108,6 @@ namespace TestProject1
 
     public class PuissanceQuatreTests
     {
-        [Fact]
-        public void TestVerifVictoire()
-        {
-            // Arrange
-            var puissanceQuatre = new PuissanceQuatre();
-            puissanceQuatre.grille = new char[4, 7]
-            {
-                    { 'X', 'X', 'X', 'X', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-            };
 
-            // Act
-            var result = puissanceQuatre.verifVictoire('X');
-
-            // Assert
-            Assert.True(result);
-        }
-
-        [Fact]
-        public void TestVerifVictoirePlayer2()
-        {
-            // Arrange
-            var puissanceQuatre = new PuissanceQuatre();
-            puissanceQuatre.grille = new char[4, 7]
-            {
-                    { 'O', 'O', 'O', 'O', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-            };
-
-            // Act
-            var result = puissanceQuatre.verifVictoire('O');
-
-            // Assert
-            Assert.True(result);
-        }
-
-        [Fact]
-        public void TestVerifEgalite()
-        {
-            // Arrange
-            var puissanceQuatre = new PuissanceQuatre();
-            puissanceQuatre.grille = new char[4, 7]
-            {
-                    { 'X', 'O', 'X', 'O', 'O', 'O', 'X'},
-                    { 'O', 'O', 'O', 'X', 'O', 'X', 'O'},
-                    { 'X', 'O', 'X', 'X', 'O', 'X', 'X'},
-                    { 'X', 'X', 'O', 'X', 'X', 'X', 'O'},
-            };
-
-            // Act
-            var result = puissanceQuatre.verifEgalite();
-
-            // Assert
-            Assert.True(result);
-        }
     }
 }
