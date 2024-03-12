@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MorpionApp
 {
     public class Morpion : Game
     {
+        private const int Rows = 3;
+        private const int Columns = 3;
+
         public Morpion()
         {
-            InitialiserGrille(3, 3);
-
+            InitialiserGrille(Rows, Columns);
         }
 
         public override void boucleJeu()
@@ -20,35 +18,33 @@ namespace MorpionApp
             {
                 while (!quiterJeu)
                 {
-                    if (tourDuJoueur)
+                    tourJoueur();
+
+                    if (tourDuJoueur && verifVictoire(CellValue.X))
                     {
-                        tourJoueur();
-                        if (verifVictoire(CellValue.X))
-                        {
-                            finPartie("Le joueur 1 a gagné !");
-                            break;
-                        }
+                        finPartie("Le joueur 1 a gagné !");
+                        break;
                     }
-                    else
+                    else if (!tourDuJoueur && verifVictoire(CellValue.O))
                     {
-                        tourJoueur();
-                        if (verifVictoire(CellValue.O))
-                        {
-                            finPartie("Le joueur 2 a gagné !");
-                            break;
-                        }
+                        finPartie("Le joueur 2 a gagné !");
+                        break;
                     }
+
                     tourDuJoueur = !tourDuJoueur;
+
                     if (verifEgalite())
                     {
                         finPartie("Aucun vainqueur, la partie se termine sur une égalité.");
                         break;
                     }
                 }
+
                 if (!quiterJeu)
                 {
                     Vue.AfficherMessage("Appuyez sur [Echap] pour quitter, [Entrer] pour rejouer.");
                     ConsoleKeyInfo key = Vue.LireTouche();
+
                     if (key.Key == ConsoleKey.Escape)
                     {
                         quiterJeu = true;
@@ -56,8 +52,7 @@ namespace MorpionApp
                     }
                     else if (key.Key == ConsoleKey.Enter)
                     {
-                        // reinitialiser la grille
-                        InitialiserGrille(3, 3);
+                        InitialiserGrille(Rows, Columns);
                         Vue.EffacerConsole();
                     }
                 }
@@ -66,7 +61,7 @@ namespace MorpionApp
 
         public new bool verifVictoire(CellValue c)
         {
-            for (int i = 0; i < grille.GetRows(); i++)
+            for (int i = 0; i < Rows; i++)
             {
                 if (grille.GetCell(i, 0).Value == c && grille.GetCell(i, 1).Value == c && grille.GetCell(i, 2).Value == c)
                 {
@@ -74,7 +69,7 @@ namespace MorpionApp
                 }
             }
 
-            for (int j = 0; j < grille.GetColumns(); j++)
+            for (int j = 0; j < Columns; j++)
             {
                 if (grille.GetCell(0, j).Value == c && grille.GetCell(1, j).Value == c && grille.GetCell(2, j).Value == c)
                 {
@@ -97,9 +92,9 @@ namespace MorpionApp
 
         public new bool verifEgalite()
         {
-            for (int i = 0; i < grille.GetRows(); i++)
+            for (int i = 0; i < Rows; i++)
             {
-                for (int j = 0; j < grille.GetColumns(); j++)
+                for (int j = 0; j < Columns; j++)
                 {
                     if (grille.GetCell(i, j).Value == CellValue.Empty)
                     {

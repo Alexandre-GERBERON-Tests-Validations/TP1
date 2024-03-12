@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MorpionApp
 {
     public class PuissanceQuatre : Game
     {
+        private const int Rows = 6;
+        private const int Columns = 7;
 
         public PuissanceQuatre()
         {
-            InitialiserGrille(6, 7);
+            InitialiserGrille(Rows, Columns);
         }
 
         public override void boucleJeu()
@@ -20,23 +18,16 @@ namespace MorpionApp
             {
                 while (!quiterJeu)
                 {
-                    if (tourDuJoueur)
+                    tourJoueur();
+                    if (verifVictoire(CellValue.X))
                     {
-                        tourJoueur();
-                        if (verifVictoire(CellValue.X))
-                        {
-                            finPartie("Le joueur 1 a gagné !");
-                            break;
-                        }
+                        finPartie("Le joueur 1 a gagné !");
+                        break;
                     }
-                    else
+                    if (verifVictoire(CellValue.O))
                     {
-                        tourJoueur();
-                        if (verifVictoire(CellValue.O))
-                        {
-                            finPartie("Le joueur 2 a gagné !");
-                            break;
-                        }
+                        finPartie("Le joueur 2 a gagné !");
+                        break;
                     }
                     tourDuJoueur = !tourDuJoueur;
                     if (verifEgalite())
@@ -56,8 +47,8 @@ namespace MorpionApp
                     }
                     else if (key.Key == ConsoleKey.Enter)
                     {
-                        // reinitialiser la grille
-                        InitialiserGrille(6, 7);
+                        // réinitialiser la grille
+                        InitialiserGrille(Rows, Columns);
                         Vue.EffacerConsole();
                     }
                 }
@@ -66,9 +57,9 @@ namespace MorpionApp
 
         public new bool verifVictoire(CellValue c)
         {
-            for (int i = 0; i < grille.GetRows(); i++)
+            for (int i = 0; i < Rows; i++)
             {
-                for (int j = 0; j < grille.GetColumns() - 3; j++)
+                for (int j = 0; j < Columns - 3; j++)
                 {
                     if (grille.GetCell(i, j).Value == c && grille.GetCell(i, j + 1).Value == c && grille.GetCell(i, j + 2).Value == c && grille.GetCell(i, j + 3).Value == c)
                     {
@@ -77,9 +68,9 @@ namespace MorpionApp
                 }
             }
 
-            for (int i = 0; i < grille.GetRows() - 3; i++)
+            for (int i = 0; i < Rows - 3; i++)
             {
-                for (int j = 0; j < grille.GetColumns(); j++)
+                for (int j = 0; j < Columns; j++)
                 {
                     if (grille.GetCell(i, j).Value == c && grille.GetCell(i + 1, j).Value == c && grille.GetCell(i + 2, j).Value == c && grille.GetCell(i + 3, j).Value == c)
                     {
@@ -88,9 +79,9 @@ namespace MorpionApp
                 }
             }
 
-            for (int i = 0; i < grille.GetRows() - 3; i++)
+            for (int i = 0; i < Rows - 3; i++)
             {
-                for (int j = 0; j < grille.GetColumns() - 3; j++)
+                for (int j = 0; j < Columns - 3; j++)
                 {
                     if (grille.GetCell(i, j).Value == c && grille.GetCell(i + 1, j + 1).Value == c && grille.GetCell(i + 2, j + 2).Value == c && grille.GetCell(i + 3, j + 3).Value == c)
                     {
@@ -99,9 +90,9 @@ namespace MorpionApp
                 }
             }
 
-            for (int i = 0; i < grille.GetRows() - 3; i++)
+            for (int i = 0; i < Rows - 3; i++)
             {
-                for (int j = 3; j < grille.GetColumns(); j++)
+                for (int j = 3; j < Columns; j++)
                 {
                     if (grille.GetCell(i, j).Value == c && grille.GetCell(i + 1, j - 1).Value == c && grille.GetCell(i + 2, j - 2).Value == c && grille.GetCell(i + 3, j - 3).Value == c)
                     {
@@ -115,9 +106,9 @@ namespace MorpionApp
 
         public new bool verifEgalite()
         {
-            for (int i = 0; i < grille.GetRows(); i++)
+            for (int i = 0; i < Rows; i++)
             {
-                for (int j = 0; j < grille.GetColumns(); j++)
+                for (int j = 0; j < Columns; j++)
                 {
                     if (grille.GetCell(i, j).Value == CellValue.Empty)
                     {
@@ -150,40 +141,19 @@ namespace MorpionApp
                         break;
 
                     case ConsoleKey.RightArrow:
-                        if (column >= grille.GetColumns() - 1)
-                        {
-                            column = 0;
-                        }
-                        else
-                        {
-                            column = column + 1;
-                        }
+                        column = (column + 1) % Columns;
                         break;
 
                     case ConsoleKey.LeftArrow:
-                        if (column <= 0)
-                        {
-                            column = grille.GetColumns() - 1;
-                        }
-                        else
-                        {
-                            column = column - 1;
-                        }
+                        column = (column - 1 + Columns) % Columns;
                         break;
 
                     case ConsoleKey.Enter:
-                        for (int i = grille.GetRows() - 1; i >= 0; i--)
+                        for (int i = Rows - 1; i >= 0; i--)
                         {
                             if (grille.GetCell(i, column).Value == CellValue.Empty)
                             {
-                                if (tourDuJoueur)
-                                {
-                                    grille.GetCell(i, column).Value = CellValue.X;
-                                }
-                                else
-                                {
-                                    grille.GetCell(i, column).Value = CellValue.O;
-                                }
+                                grille.GetCell(i, column).Value = tourDuJoueur ? CellValue.X : CellValue.O;
                                 moved = true;
                                 break;
                             }
@@ -192,6 +162,5 @@ namespace MorpionApp
                 }
             }
         }
-
     }
 }
