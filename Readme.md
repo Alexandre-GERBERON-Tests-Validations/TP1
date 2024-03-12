@@ -122,4 +122,10 @@ Il est possible de faire des tests uniquement sur des fonctions qui retournent q
 
 ## 2 - Les méthodes de résolution de ces problèmes
 
+- Séparation des Classes
 
+- Application des Principes SOLID
+
+- Tests Unitaires
+
+- Refactoring
