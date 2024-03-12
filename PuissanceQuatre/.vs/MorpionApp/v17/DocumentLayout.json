@@ -3,22 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD390A18-6C47-4ADB-8B25-C7197FC46D87}|..\\TestProject1\\TestProject1.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\testproject1\\morpionapptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\puissancequatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:puissancequatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\morpion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:morpion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\puissancequatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:puissancequatre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\vue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:vue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD390A18-6C47-4ADB-8B25-C7197FC46D87}|..\\TestProject1\\TestProject1.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\testproject1\\morpionapptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TestProject1\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|solutionrelative:cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,53 +60,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MorpionAppTests.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
-              "RelativeDocumentMoniker": "..\\TestProject1\\MorpionAppTests.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
-              "RelativeToolTip": "..\\TestProject1\\MorpionAppTests.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAADwv50AAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Joueur.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Joueur.cs",
+              "RelativeDocumentMoniker": "Joueur.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Joueur.cs",
+              "RelativeToolTip": "Joueur.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T08:24:06.7Z",
+              "WhenOpened": "2024-03-12T20:20:32.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TestProject1\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\..\\TestProject1\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TestProject1\\UnitTest1.cs",
-              "RelativeToolTip": "..\\..\\TestProject1\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "DocumentIndex": 5,
+              "Title": "Vue.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Vue.cs",
+              "RelativeDocumentMoniker": "Vue.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Vue.cs",
+              "RelativeToolTip": "Vue.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvzEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T14:59:57.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PuissanceQuatre.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\PuissanceQuatre.cs",
-              "RelativeDocumentMoniker": "PuissanceQuatre.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\PuissanceQuatre.cs",
-              "RelativeToolTip": "PuissanceQuatre.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAL4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T13:55:29.593Z",
+              "WhenOpened": "2024-03-12T19:42:08.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAiAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAkwJEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T13:55:25.287Z"
+              "WhenOpened": "2024-03-12T10:57:38.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Cell.cs",
+              "RelativeDocumentMoniker": "Cell.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Cell.cs",
+              "RelativeToolTip": "Cell.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowCAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T10:48:26.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Grid.cs",
+              "RelativeDocumentMoniker": "Grid.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Grid.cs",
+              "RelativeToolTip": "Grid.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T10:48:03.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MorpionAppTests.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
+              "RelativeDocumentMoniker": "..\\TestProject1\\MorpionAppTests.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
+              "RelativeToolTip": "..\\TestProject1\\MorpionAppTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T08:24:06.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,9 +144,46 @@
               "RelativeDocumentMoniker": "Morpion.cs",
               "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Morpion.cs",
               "RelativeToolTip": "Morpion.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAowFgAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-28T13:55:16.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\..\\TestProject1\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "..\\..\\TestProject1\\UnitTest1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T14:59:57.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PuissanceQuatre.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\PuissanceQuatre.cs",
+              "RelativeDocumentMoniker": "PuissanceQuatre.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\PuissanceQuatre.cs",
+              "RelativeToolTip": "PuissanceQuatre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T21:17:08.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T13:55:25.287Z",
               "EditorCaption": ""
             }
           ]
