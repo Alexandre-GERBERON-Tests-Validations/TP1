@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MorpionApp
 {
@@ -19,7 +15,6 @@ namespace MorpionApp
             grille = new Grid(rows, columns);
         }
 
-
         public virtual void tourJoueur()
         {
             var (row, column) = (0, 0);
@@ -34,7 +29,11 @@ namespace MorpionApp
                 // put cursor position at the right place
                 Console.SetCursorPosition(column * 4 + 1, row * 2 + 1);
 
-                switch (Vue.LireTouche().Key)
+                var key = Vue.LireTouche().Key;
+                var maxRow = grille.GetRows() - 1;
+                var maxColumn = grille.GetColumns() - 1;
+
+                switch (key)
                 {
                     case ConsoleKey.Escape:
                         quiterJeu = true;
@@ -42,48 +41,21 @@ namespace MorpionApp
                         break;
 
                     case ConsoleKey.RightArrow:
-                        if (column >= grille.GetColumns() - 1)
-                        {
-                            column = 0;
-                        }
-                        else
-                        {
-                            column = column + 1;
-                        }
+                        column = column >= maxColumn ? 0 : column + 1;
                         break;
 
                     case ConsoleKey.LeftArrow:
-                        if (column <= 0)
-                        {
-                            column = grille.GetColumns() - 1;
-                        }
-                        else
-                        {
-                            column = column - 1;
-                        }
+                        column = column <= 0 ? maxColumn : column - 1;
                         break;
 
                     case ConsoleKey.UpArrow:
-                        if (row <= 0)
-                        {
-                            row = grille.GetRows() - 1;
-                        }
-                        else
-                        {
-                            row = row - 1;
-                        }
+                        row = row <= 0 ? maxRow : row - 1;
                         break;
 
                     case ConsoleKey.DownArrow:
-                        if (row >= grille.GetRows() - 1)
-                        {
-                            row = 0;
-                        }
-                        else
-                        {
-                            row = row + 1;
-                        }
+                        row = row >= maxRow ? 0 : row + 1;
                         break;
+
                     case ConsoleKey.Enter:
                         if (grille.GetCell(row, column).Value == CellValue.Empty)
                         {
@@ -93,23 +65,19 @@ namespace MorpionApp
                         }
                         break;
                 }
-
             }
         }
 
         public bool verifVictoire(CellValue c)
         {
-            for (int i = 0; i < grille.GetRows(); i++)
+            for (int i = 0; i < 3; i++)
             {
                 if (grille.GetCell(i, 0).Value == c && grille.GetCell(i, 1).Value == c && grille.GetCell(i, 2).Value == c)
                 {
                     return true;
                 }
-            }
 
-            for (int j = 0; j < grille.GetColumns(); j++)
-            {
-                if (grille.GetCell(0, j).Value == c && grille.GetCell(1, j).Value == c && grille.GetCell(2, j).Value == c)
+                if (grille.GetCell(0, i).Value == c && grille.GetCell(1, i).Value == c && grille.GetCell(2, i).Value == c)
                 {
                     return true;
                 }

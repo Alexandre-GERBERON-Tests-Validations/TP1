@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MorpionApp
 {
@@ -18,20 +14,27 @@ namespace MorpionApp
 
         private void InitializeCells()
         {
-            for (int i = 0; i < cells.GetLength(0); i++)
+            int rowCount = cells.GetLength(0);
+            int columnCount = cells.GetLength(1);
+
+            for (int i = 0; i < rowCount; i++)
             {
-                for (int j = 0; j < cells.GetLength(1); j++)
+                for (int j = 0; j < columnCount; j++)
                 {
-                    cells[i, j] = new Cell(i, j);
-                    cells[i, j].Value = CellValue.Empty;
+                    cells[i, j] = new Cell(i, j)
+                    {
+                        Value = CellValue.Empty
+                    };
                 }
             }
         }
 
-
         public Cell GetCell(int row, int column)
         {
-            if (row < 0 || row >= cells.GetLength(0) || column < 0 || column >= cells.GetLength(1))
+            int rowCount = cells.GetLength(0);
+            int columnCount = cells.GetLength(1);
+
+            if (row < 0 || row >= rowCount || column < 0 || column >= columnCount)
             {
                 throw new ArgumentOutOfRangeException("Invalid cell coordinates");
             }
@@ -41,7 +44,10 @@ namespace MorpionApp
 
         public void SetCell(int row, int column, CellValue value)
         {
-            if (row < 0 || row >= cells.GetLength(0) || column < 0 || column >= cells.GetLength(1))
+            int rowCount = cells.GetLength(0);
+            int columnCount = cells.GetLength(1);
+
+            if (row < 0 || row >= rowCount || column < 0 || column >= columnCount)
             {
                 throw new ArgumentOutOfRangeException("Invalid cell coordinates");
             }
@@ -58,6 +64,7 @@ namespace MorpionApp
         {
             return cells.GetLength(0);
         }
+
         public int GetColumns()
         {
             return cells.GetLength(1);

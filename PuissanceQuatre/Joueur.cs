@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MorpionApp
+﻿namespace MorpionApp
 {
     internal class Joueur
     {
-        public string Nom { get; set; }
-        public CellValue Symbole { get; set; }
+        public string Nom { get; }
+        public CellValue Symbole { get; }
 
         public Joueur(string nom, CellValue symbole)
         {
