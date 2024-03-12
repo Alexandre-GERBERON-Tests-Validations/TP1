@@ -99,4 +99,68 @@ namespace TestProject1
             Assert.True(result);
         }
     }
+
+
+    public class PuissanceQuatreTests
+    {
+        [Fact]
+        public void TestVerifVictoire()
+        {
+            // Arrange
+            var puissanceQuatre = new PuissanceQuatre();
+            puissanceQuatre.grille = new char[4, 7]
+            {
+                    { 'X', 'X', 'X', 'X', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+            };
+
+            // Act
+            var result = puissanceQuatre.verifVictoire('X');
+
+            // Assert
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void TestVerifVictoirePlayer2()
+        {
+            // Arrange
+            var puissanceQuatre = new PuissanceQuatre();
+            puissanceQuatre.grille = new char[4, 7]
+            {
+                    { 'O', 'O', 'O', 'O', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+                    { ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+            };
+
+            // Act
+            var result = puissanceQuatre.verifVictoire('O');
+
+            // Assert
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void TestVerifEgalite()
+        {
+            // Arrange
+            var puissanceQuatre = new PuissanceQuatre();
+            puissanceQuatre.grille = new char[4, 7]
+            {
+                    { 'X', 'O', 'X', 'O', 'O', 'O', 'X'},
+                    { 'O', 'O', 'O', 'X', 'O', 'X', 'O'},
+                    { 'X', 'O', 'X', 'X', 'O', 'X', 'X'},
+                    { 'X', 'X', 'O', 'X', 'X', 'X', 'O'},
+            };
+
+            // Act
+            var result = puissanceQuatre.verifEgalite();
+
+            // Assert
+            Assert.True(result);
+        }
+    }
 }

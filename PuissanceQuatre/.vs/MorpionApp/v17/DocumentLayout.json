@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\PuissanceQuatre\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD390A18-6C47-4ADB-8B25-C7197FC46D87}|..\\TestProject1\\TestProject1.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\testproject1\\morpiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FD390A18-6C47-4ADB-8B25-C7197FC46D87}|..\\TestProject1\\TestProject1.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\testproject1\\morpionapptests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0418F92-68EA-4091-BC49-D5F9652BBFA7}|MorpionApp.csproj|c:\\users\\alexandre\\desktop\\cours\\ingenieur\\a2\\tests et validations\\s\u00E9ance 1 \u0026 2\\tp\\puissancequatre\\morpion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,12 +41,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MorpionTests.cs",
-              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionTests.cs",
-              "RelativeDocumentMoniker": "..\\TestProject1\\MorpionTests.cs",
-              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionTests.cs",
-              "RelativeToolTip": "..\\TestProject1\\MorpionTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAkAAAA",
+              "Title": "MorpionAppTests.cs",
+              "DocumentMoniker": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
+              "RelativeDocumentMoniker": "..\\TestProject1\\MorpionAppTests.cs",
+              "ToolTip": "C:\\Users\\Alexandre\\Desktop\\Cours\\Ingenieur\\A2\\Tests et validations\\S\u00E9ance 1 \u0026 2\\TP\\TestProject1\\MorpionAppTests.cs",
+              "RelativeToolTip": "..\\TestProject1\\MorpionAppTests.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAADwv50AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T08:24:06.7Z",
               "EditorCaption": ""
@@ -73,7 +73,8 @@
               "RelativeToolTip": "PuissanceQuatre.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAL4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T13:55:29.593Z"
+              "WhenOpened": "2024-02-28T13:55:29.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
