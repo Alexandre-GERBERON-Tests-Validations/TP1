@@ -19,4 +19,35 @@ namespace TP2.Tests
             Assert.Equal(529.89, mensualite, 0.01); // Tolerance de 0.01
         }
     }
+    public class CreateCSVTests
+    {
+        [Fact]
+        public void GenererCSV_CreerFichierCSVCorrectement()
+        {
+            // Arrange
+            string cheminFichier = "test.csv";
+            double coutTotalCredit = 150000;
+            string[] donnees = new string[]
+            {
+                    $"Coût total du crédit : {coutTotalCredit}",
+                    "1, 1000, 99000",
+                    "2, 1100, 97900",
+                // Ajoutez plus de lignes selon vos besoins
+            };
+
+            // Act
+            CreateCSV.GenererCSV(cheminFichier, donnees);
+
+            // Assert
+            Assert.True(File.Exists(cheminFichier));
+
+            string[] lignesFichier = File.ReadAllLines(cheminFichier);
+            Assert.Equal(donnees.Length, lignesFichier.Length);
+
+            for (int i = 0; i < donnees.Length; i++)
+            {
+                Assert.Equal(donnees[i], lignesFichier[i]);
+            }
+        }
+    }
 }
