@@ -129,3 +129,11 @@ Il est possible de faire des tests uniquement sur des fonctions qui retournent q
 - Tests Unitaires
 
 - Refactoring
+
+## 3 - Le développement des fonctionnalités manquantes
+
+
+
+
+
+
