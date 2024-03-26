@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.IO;
 
 namespace TP2
 {
     public static class CreateCSV
     {
-        public static void GenererCSV(string cheminFichier, string[] donnees)
+        public static void CreateFile(Credit credit, string path)
         {
-            using (StreamWriter writer = new StreamWriter(cheminFichier))
+            using (StreamWriter writer = new StreamWriter(path))
             {
-                foreach (var ligne in donnees)
+                writer.WriteLine($"Coût total du crédit : {credit.CoutTotal}");
+                writer.WriteLine("Numero;RemboursementCapital;RestantDu");
+                foreach (Mensualite mensualite in credit.Mensualites)
                 {
-                    writer.WriteLine(ligne);
+                    writer.WriteLine($"{mensualite.Numero};{mensualite.RemboursementCapital};{mensualite.RestantDu}");
                 }
             }
         }
