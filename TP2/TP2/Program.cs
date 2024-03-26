@@ -9,6 +9,9 @@ namespace TP2
             try
             {
                 Credit credit = InputHandler.HandleInput(args);
+                string csvPath = "credit.csv";
+                CreateCSV.CreateFile(credit, csvPath);
+                Console.WriteLine("Le fichier CSV a été créé avec succès.");
             }
             catch (ArgumentException ex)
             {
