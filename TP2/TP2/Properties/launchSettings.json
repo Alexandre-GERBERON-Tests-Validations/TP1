@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TP2": {
+      "commandName": "Project",
+      "commandLineArgs": "200000\r\n180\r\n5\r\nx"
+    }
+  }
+}

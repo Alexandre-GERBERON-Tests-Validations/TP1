@@ -5,14 +5,18 @@ namespace TP2
     public class Mensualite
     {
         public int Numero { get; }
-        public double RemboursementCapital { get; }
-        public double RestantDu { get; }
+        public decimal InteretRembourse { get; }
+        public decimal CapitalRestantDu { get; }
+        public decimal CapitalTotalRembourse { get; }
+        public decimal CoutMensualite { get; }
 
-        public Mensualite(int numero, double remboursementCapital, double restantDu)
+        public Mensualite(int numero, decimal interetRembourse, decimal capitalRestantDu, decimal capitalTotalRembourse, decimal mensualite)
         {
             Numero = numero;
-            RemboursementCapital = Math.Round(remboursementCapital, 0);
-            RestantDu = Math.Round(restantDu, 0);
+            InteretRembourse = interetRembourse;
+            CapitalRestantDu = capitalRestantDu;
+            CapitalTotalRembourse = capitalTotalRembourse;
+            CoutMensualite = mensualite;
         }
     }
 }

@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace TP2
+﻿namespace TP2
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             try
             {

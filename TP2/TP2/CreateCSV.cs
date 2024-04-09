@@ -8,11 +8,15 @@ namespace TP2
         {
             using (StreamWriter writer = new StreamWriter(path))
             {
-                writer.WriteLine($"Coût total du crédit : {credit.CoutTotal}");
-                writer.WriteLine("Numero;RemboursementCapital;RestantDu");
+                writer.WriteLine($"Coût total du crédit : {Math.Round(credit.CoutTotal, 2, MidpointRounding.ToZero)}");
+                writer.WriteLine("Numero;interetRembourse;CapitalRestantDu;CapitalTotalRembourse;Mensualite");
                 foreach (Mensualite mensualite in credit.Mensualites)
                 {
-                    writer.WriteLine($"{mensualite.Numero};{mensualite.RemboursementCapital};{mensualite.RestantDu}");
+                    writer.WriteLine($"{mensualite.Numero};" +
+                        $"{Math.Round(mensualite.InteretRembourse, 2, MidpointRounding.ToZero)};" +
+                        $"{Math.Round(mensualite.CapitalRestantDu, 2, MidpointRounding.ToZero)};" +
+                        $"{Math.Round(mensualite.CapitalTotalRembourse, 2, MidpointRounding.ToZero)};" +
+                        $"{Math.Round(mensualite.CoutMensualite, 2, MidpointRounding.ToZero)}");
                 }
             }
         }

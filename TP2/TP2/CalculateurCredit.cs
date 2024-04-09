@@ -5,39 +5,41 @@ namespace TP2
 {
     public static class CalculateurCredit
     {
-        public static double CalculerMensualite(Credit credit)
+        public static decimal CalculerMensualite(Credit credit)
         {
-            double tauxNominal = credit.TauxNominal / 12 / 100;
-            double montant = credit.Montant;
+            decimal tauxMensuel = credit.TauxNominal / 12 / 100;
+            decimal montant = credit.Montant;
             int duree = credit.Duree;
-            double denominateur = Math.Pow(1 + tauxNominal, -duree);
-            return montant * tauxNominal / (1 - denominateur);
+            decimal numerator = montant * tauxMensuel;
+            decimal denominateur = 1 - (decimal)Math.Pow((double)(1 + tauxMensuel), -duree);
+            return numerator / denominateur;
         }
 
         public static List<Mensualite> CalculerMensualites(Credit credit)
         {
-            double montant = credit.Montant;
+            List<Mensualite> mensualites = new List<Mensualite>();
+            decimal montant = credit.Montant;
             int duree = credit.Duree;
-            double mensualite = CalculerMensualite(credit);
-            double capitalRestantDu = montant + credit.CoutTotal;
-            List<Mensualite> mensualites = new List<Mensualite>(duree);
-
+            decimal tauxNominal = credit.TauxNominal;
+            decimal mensualite = CalculerMensualite(credit);
+            decimal capitalRestantDu = montant;
+            decimal capitalTotalRembourse = 0;
             for (int i = 1; i <= duree; i++)
             {
-                capitalRestantDu -= mensualite;
-                double remboursementCapital = (montant + credit.CoutTotal) - capitalRestantDu;
-                Mensualite mensualiteObj = new Mensualite(i, remboursementCapital, capitalRestantDu);
-                mensualites.Add(mensualiteObj);
+                decimal interetRembourse = capitalRestantDu * tauxNominal / 12 / 100;
+                decimal capitalRembourse = mensualite - interetRembourse;
+                capitalTotalRembourse += capitalRembourse;
+                capitalRestantDu -= capitalRembourse;
+                mensualites.Add(new Mensualite(i, interetRembourse, capitalRestantDu, capitalTotalRembourse, mensualite));
             }
-
-            return mensualites;
+            return mensualites; 
         }
 
-        public static double CalculerCoutTotal(Credit credit)
+        public static decimal CalculerCoutTotal(Credit credit)
         {
-            double montant = credit.Montant;
+            decimal montant = credit.Montant;
             int duree = credit.Duree;
-            double mensualite = CalculerMensualite(credit);
+            decimal mensualite = CalculerMensualite(credit);
             return mensualite * duree - montant;
         }
     }
